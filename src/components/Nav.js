@@ -5,7 +5,7 @@ function Nav(props) {
     return (
       <nav className='Nav'>
         <ul className="NavLinks">
-            <li><Link to="/">Home</Link></li>
+            {/* <li><Link to="/">Home</Link></li> */}
             
         </ul>
       </nav>

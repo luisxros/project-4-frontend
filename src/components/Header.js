@@ -20,7 +20,12 @@ const Header = (props) => {
             <div className="audio">
                 
             <Audio />
+                <div className="links">
 
+                    <Link className='link-1' to='/'>HOME</Link>
+                    <Link className='link-2' to='/songs'>PLAYLIST</Link>
+
+                </div>
             </div>
         </header>
     )

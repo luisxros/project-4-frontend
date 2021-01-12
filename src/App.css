@@ -60,7 +60,7 @@
 }
   .Header {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: space-between;
   }
 
@@ -69,6 +69,10 @@
     margin-top: 10px;
     padding-bottom: 10px;
     font-size: 45px;
+  }
+
+  .logo:hover {
+    color: rgb(131, 34, 34);
   }
 
   .audio {
@@ -95,4 +99,21 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(110, 73, 3);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-1:hover {
+  color: rgb(131, 34, 34);
+}
+
+.link-2:hover {
+  color: rgb(131, 34, 34);
+}
+
+.link-1 {
+  margin-right: 60px;
+}
+.links {
+  font-size: 20px;
 }

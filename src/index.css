@@ -27,8 +27,8 @@ header {
 nav {
   grid-area: nav;
   margin-left: 0.5rem;
-  background-color: rgb(212, 154, 66);
-  border: 5px solid rgb(131, 34, 34);
+  /* background-color: rgb(212, 154, 66);
+  border: 5px solid rgb(131, 34, 34); */
   border-radius: 5px;
   
 }
