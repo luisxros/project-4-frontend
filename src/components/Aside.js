@@ -1,5 +1,14 @@
 import Form from './Form.js';
 
+// const {createProxyMiddleware} = require('http-proxy-middleware')
+
+// module.exports = function(app){
+//     app.use(createProxyMiddleware({
+//         target: "https://tune-it-up-api.herokuapp.com",
+//         changeOrigin: true
+//     }))
+// }
+
 function Aside(props) {
     return (
       <aside>
