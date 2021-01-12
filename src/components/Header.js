@@ -1,6 +1,6 @@
 import '../App.css'
 
-import Audio from './Audio';
+// import Audio from './Audio';
 
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,13 +17,14 @@ const Header = (props) => {
             <div className="logo">
             <Link className="logo" to='/'><FontAwesomeIcon icon={faMusic}/></Link>
             </div>
+
             <div className="audio">
-                
-            <Audio />
+                 {/* <Audio /> */}
+            </div>
+
             <div className="links">
-                    <Link className='link-1' to='/'>HOME</Link>
-                    <Link className='link-2' to='/songs'>PLAYLIST</Link>
-                </div>
+            <Link className='link-1' to='/'>HOME</Link>
+            <Link className='link-2' to='songs'>PLAYLIST</Link>
             </div>
         </header>
     )

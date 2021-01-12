@@ -73,11 +73,11 @@
 .logo:hover {
   color:rgb(131, 34, 34);
 }
-  .audio {
+  /* .audio {
     margin-left: 20px;
     margin-top: 10px;
     padding-bottom: 5px;
-  }
+  } */
 
   .NavLinks {
     list-style: none;
@@ -100,4 +100,7 @@
 }
 .links {
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
