@@ -36,7 +36,7 @@ return (
 
       </Switch>
 
-      <Footer className='footer' />
+      <Footer />
 
       </div>
   </div>

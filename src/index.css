@@ -55,9 +55,12 @@ footer {
   position: absolute;;
   bottom:0px;
   width: 100%;
-  background-color:black;
-  color: rgb(131, 34, 34);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
   padding-bottom: 10px;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak3.picdn.net%2Fshutterstock%2Fvideos%2F727393%2Fthumb%2F1.jpg&f=1&nofb=1');
 }
 .Song {
   border: 5px solid rgb(212, 154, 66);
