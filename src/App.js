@@ -22,7 +22,7 @@ function App(props) {
 return (
 
   <div className="App">
-    <div>
+    <div className='content-wrap'>
 
       <Header />
 
@@ -36,7 +36,7 @@ return (
 
       </Switch>
 
-      <Footer />
+      <Footer className='footer' />
 
       </div>
   </div>
