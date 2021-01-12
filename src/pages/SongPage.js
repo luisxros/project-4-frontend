@@ -14,7 +14,7 @@ function SongPage() {
   }, []);
 
     function getSongs() {
-      fetch('https://tune-it-up-api.herokuapp.com/songs')
+      fetch('https://tune-it-up-api-2.herokuapp.com/songs')
       .then(res => res.json())
       .then(data => setSongsState({songs: data}))
       .catch(error => console.error(error));
@@ -22,7 +22,7 @@ function SongPage() {
 
     function handleAdd(event, formInputs) {
       event.preventDefault();
-      fetch('https://tune-it-up-api.herokuapp.com/songs', {
+      fetch('https://tune-it-up-api-2.herokuapp.com/songs', {
         body: JSON.stringify(formInputs),
         method: "POST",
         headers: {
@@ -37,7 +37,7 @@ function SongPage() {
     }
 
     function handleDelete(deletedSong) {
-      fetch(`https://tune-it-up-api.herokuapp.com/songs/${deletedSong.id}`, {
+      fetch(`https://tune-it-up-api-2.herokuapp.com/songs/${deletedSong.id}`, {
         method: 'DELETE',
       })
       .then(() => {
@@ -48,7 +48,7 @@ function SongPage() {
 
     function handleUpdate(event, formInputs) {
       event.preventDefault();
-      fetch(`https://tune-it-up-api.herokuapp.com/songs/${formInputs.id}`, {
+      fetch(`https://tune-it-up-api-2.herokuapp.com/songs/${formInputs.id}`, {
         method: 'PUT',
         body: JSON.stringify(formInputs),
         headers: {
