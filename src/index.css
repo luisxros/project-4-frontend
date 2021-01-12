@@ -1,13 +1,196 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Stylish&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+h1 {
+  text-align: center;
+  color: white;
+  
+}
+.container {
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content aside"
+    "footer footer footer";
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: auto 1fr 200px;
+  grid-gap: 10px;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  grid-area: header;
+  background-color: rgb(212, 154, 66);
+  border-bottom: 5px solid rgb(97, 20, 1);
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 0.5rem;
+  
+
+ 
+}
+
+main {
+  grid-area: content;
+ 
+  
+  
+  
+}
+
+aside {
+  grid-area: aside;
+  margin-right: 0.5rem;
+  background-color: rgb(212, 154, 66);
+  border: 5px solid rgb(131, 34, 34);
+  border-radius: 5px;
+  color: rgb(131, 34, 34);
+  
+
+}
+
+footer {
+  grid-area: footer;
+  height: 40px;
+  position:absolute;
+  bottom:0px;
+  width: 100%;
+  background-image:url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak3.picdn.net%2Fshutterstock%2Fvideos%2F727393%2Fthumb%2F1.jpg&f=1&nofb=1');
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: large;
+  margin-bottom: -50px;
+  padding-bottom: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.Song {
+  border: 5px solid rgb(212, 154, 66);
+  padding: 5px;
+  
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(131, 34, 34);
+  color: white;
+}
+
+.NavLinks {
+  list-style: none;
+  display: flex;
+  margin-top: 15px;
+  
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(212, 154, 66);
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: [labels] auto [controls] 1fr;
+  grid-auto-flow: row;
+  grid-gap: .3em;
+  margin-right: 4px;
+  background: none;
+  padding: .1em;
+}
+
+form > label  {
+  grid-column: labels;
+  grid-row: auto;
+}
+
+form > input,
+form > textarea,
+form > button {
+  grid-column: controls;
+  grid-row: auto;
+  border: none;
+  padding: .2em;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+
+body {
+  margin: 0;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fil6.picdn.net%2Fshutterstock%2Fvideos%2F3683201%2Fthumb%2F1.jpg&f=1&nofb=1');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+  font-family: 'Permanent Marker';
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content"
+      "aside"
+      "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      auto /* Header */
+      minmax(200px, auto) /* Nav */
+      1fr /* Content */
+      minmax(75px, auto) /* Sidebar */
+      auto; /* Footer */
+  }
+
+  nav, aside {
+    margin: 0;
+  }
+  nav {
+    padding: 20px 20%
+  }
+}
+
+.songlink {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  -webkit-text-stroke: 2px black;
+  font-family: 'Permanent Marker', cursive;
+}
+.songlink:hover {
+  color: rgb(212, 154, 66);
+}
+
+.homelink{
+  text-decoration: none;
+  color: white ;
+}
+.homelink:hover {
+  color:rgb(131, 34, 34);
+}
+
+.welcome {
+  
+  
+margin-top: 50px;
+margin-right: 200px;
+margin-left: 200px;
+  color: white;
+  font-size: 32px;
+  background-color:  rgba(131, 34, 34,.6);
+  border-radius: 25px;
+  border: 5px dotted orange;
+  
 }

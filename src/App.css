@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+  }
+  
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .btn-1 {
+    margin-right: 450px;
+    color: red;
+    font-weight: bold;
+  }
+
+  .btn-2 {
+    font-weight: bold;
+    color: blue;
+  }
+
+  .btn-1:hover {
+    cursor: pointer;
+  }
+
+  .btn-2:hover {
+    cursor: pointer;
+  }
+
+  .Header a {
+    text-decoration: none;
+    color: white;
+}
+  .Header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 45px;
+  }
+.logo:hover {
+  color:rgb(131, 34, 34);
+}
+  .audio {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .NavLinks {
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.NavLinks li {
+    margin-right: 20px;
+    font-size: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.link-1:hover {
+  color: rgb(131, 34, 34);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link-2:hover {
+  color: rgb(131, 34, 34);
+}
+.link-1 {
+  margin-right: 60px;
+}
+.links {
+  font-size: 20px;
 }
