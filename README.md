@@ -25,8 +25,8 @@
  ![ERD](./src/images/ERD.png)
 
  ### Getting Started:
- [Trello Board](https://trello.com/b/fW3Fedaq/project)
-[click Here](https://tune-it-up.netlify.app/) to see deployed app
+- [Trello Board](https://trello.com/b/fW3Fedaq/project)
+- [click Here](https://tune-it-up.netlify.app/) to see deployed app
 
  ### Future Enhancements:
 - Add playlists feature
